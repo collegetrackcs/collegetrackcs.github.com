@@ -1,0 +1,86 @@
+body {
+	font-family:  Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	background: url('../background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div {
+	display: block;
+}
+
+#landing {
+	margin: auto;
+	padding: 60px 60px 0px 60px;
+	width: 100%
+}
+
+#left {
+	float: left;
+	height: 534px;
+	/*width: 420px; */
+    width: 50%
+}
+
+#logo {
+	font-family: "Helvetica",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 60px; 
+	color: #FBDC7C;
+
+}
+
+#headline { /* headline */
+	font-size: 60px;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 40px; 
+	font-weight: bold;
+	color: #FFF;
+}
+
+#blurb {
+	font-size: 19px; 
+	line-height: 20px; 
+	margin-top: 0em;
+	margin-bottom: 40px;
+	color: #FFFBD5;
+}
+
+
+#subtext {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #FFFBD5;
+	width: 50%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.links {
+	margin: 0px;
+}
+
+.links li {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 10px;
+    
+}
+
+.links li a {
+	color: #FBDC7C;
+	text-decoration: none;
+}
+
+.links li a:hover {
+	text-decoration: underline;
+}
