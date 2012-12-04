@@ -29,7 +29,7 @@ div {
 	font-family: "Helvetica",sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 50px;
 	line-height: 1em;
 	margin-top: 0;
 	margin-bottom: 60px; 
@@ -38,7 +38,7 @@ div {
 }
 
 #headline { /* headline */
-	font-size: 60px;
+	font-size: 80px;
 	line-height: 1em;
 	margin-top: 0;
 	margin-bottom: 40px; 
@@ -47,25 +47,15 @@ div {
 }
 
 #blurb {
-	font-size: 19px; 
-	line-height: 20px; 
+	font-size: 20px; 
+	line-height: 24px; 
 	margin-top: 0em;
 	margin-bottom: 40px;
 	color: #FFFBD5;
 }
 
-
-#subtext {
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: bold;
-	color: #FFFBD5;
-	width: 50%;
-	text-align: center;
-	padding-top: 10px;
-}
-
 .links {
+    font-size: 20px;
 	margin: 0px;
 }
 
