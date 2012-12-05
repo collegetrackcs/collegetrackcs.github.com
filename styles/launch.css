@@ -19,10 +19,12 @@ div {
 }
 
 #left {
+    padding: 20px;
 	float: left;
 	height: 534px;
-	/*width: 420px; */
-    width: 50%
+	width: 420px;
+	background: rgba(0, 104, 139, 0.3); /* color of backdrop */
+    
 }
 
 #logo {
