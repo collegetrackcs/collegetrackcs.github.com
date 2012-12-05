@@ -15,13 +15,13 @@ div {
 #landing {
 	margin: auto;
 	padding: 60px 60px 0px 60px;
-	width: 100%
+	width: 100%;
 }
 
 #left {
     padding: 20px;
 	float: left;
-	height: 534px;
+	/*height: 534px; */
 	width: 420px;
 	background: rgba(0, 104, 139, 0.3); /* color of backdrop */
     
