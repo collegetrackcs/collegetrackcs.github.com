@@ -99,7 +99,7 @@ void keyPressed()
       location = location + 5;
       
     }
-    if(key == KeyEvent.VK_SPACE || (key == CODED && keyCode == UP))
+    if(key == 's' || key == KeyEvent.VK_SPACE || (key == CODED && keyCode == UP))
     {
       
       beamX[counter] = location+42;
