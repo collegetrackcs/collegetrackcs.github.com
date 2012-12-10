@@ -1,5 +1,7 @@
-/* @pjs preload="data/jetspre.png, data/raptor.png, data/warzone.jpg"; */
-
+/* @pjs preload="http://coderiderz.com/SDKM95erz/Shooter/data/jetspre.png,
+http://coderiderz.com/SDKM95erz/Shooter/data/raptor.png,
+http://coderiderz.com/SDKM95erz/Shooter/data/warzone.jpg"; */
+/* @pjs globalKeyEvents="true"; */  
 PImage img;
 PImage cloud;
 PImage jet;
@@ -18,13 +20,13 @@ void setup()
 {
   size(400,400);
   noStroke();
-//  jet = loadImage("data/jetspre.png");
-//  img = loadImage("data/raptor.png");
-//  cloud = loadImage("data/warzone.jpeg");
+  jet = loadImage("http://coderiderz.com/SDKM95erz/Shooter/data/jetspre.png");
+  img = loadImage("http://coderiderz.com/SDKM95erz/Shooter/data/raptor.png");
+  cloud = loadImage("http://coderiderz.com/SDKM95erz/Shooter/data/warzone.jpg");
 }
 
 void draw() {
-//  image(cloud, 0, 0, 400, 400);
+  image(cloud, 0, 0, 400, 400);
 
   plane1++;
   plane2++;
@@ -44,7 +46,7 @@ void draw() {
       location = location + 5;
       
     }
-    if(key == KeyEvent.VK_SPACE)
+    if(key == KeyEvent.VK_SPACE || (key == CODED && keyCode == UP))
     {
       
       beamX[counter] = location+42;
@@ -64,11 +66,11 @@ void draw() {
     beamY[i]-= 5;
   }
  
-//  image(img, location, 340, 90, 60);
-//  image(jet,0,plane1);
-//  image(jet,100,plane2);
-//  image(jet,250,plane3);
-//  image(jet,330,plane4);
+  image(img, location, 340, 90, 60);
+  image(jet,0,plane1);
+  image(jet,100,plane2);
+  image(jet,250,plane3);
+  image(jet,330,plane4);
   if(plane1 > 450) plane1 = 0;
   if(plane2 > 450) plane2 = 0;
   if(plane3 > 450) plane3 = 0;
