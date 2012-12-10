@@ -1,6 +1,8 @@
 /* @pjs preload="http://coderiderz.com/SDKM95erz/Shooter/data/jetspre.png,
 http://coderiderz.com/SDKM95erz/Shooter/data/raptor.png,
-http://coderiderz.com/SDKM95erz/Shooter/data/warzone.jpg"; */
+http://coderiderz.com/SDKM95erz/Shooter/data/warzone.jpg";
+  globalKeyEvents="true"; */
+
 PImage img;
 PImage cloud;
 PImage jet;
@@ -25,14 +27,15 @@ void setup()
 }
 
 void draw() {
-  image(cloud, 0, 0, 400, 400);
 
   plane1++;
   plane2++;
   plane3++;
   plane4++;
 
+/*
   if(keyPressed) {
+
     if(key == CODED && keyCode == LEFT)
     {
       
@@ -52,8 +55,10 @@ void draw() {
       beamY[counter] = 330; 
       counter++;
     }
-  }
+  }*/
   
+  image(cloud, 0, 0, 400, 400);
+
   fill(245, 250, 5);
   for(int i=0; i<counter; i++)
   {
@@ -64,7 +69,7 @@ void draw() {
   {
     beamY[i]-= 5;
   }
- 
+
   image(img, location, 340, 90, 60);
   image(jet,0,plane1);
   image(jet,100,plane2);
@@ -76,5 +81,39 @@ void draw() {
   if(plane4 > 450) plane4 = 0;
 
 }
+
+void keyPressed()
+{
+  
+
+
+    if(key == CODED && keyCode == LEFT)
+    {
+      
+      location = location - 5;
+          
+    }
+     if(key == CODED && keyCode == RIGHT)
+    {
+      
+      location = location + 5;
+      
+    }
+    if(key == KeyEvent.VK_SPACE || (key == CODED && keyCode == UP))
+    {
+      
+      beamX[counter] = location+42;
+      beamY[counter] = 330; 
+      counter++;
+    }
+
+
+
+
+
+}
+
+
+
 
 
