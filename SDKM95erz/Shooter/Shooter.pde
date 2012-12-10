@@ -33,7 +33,7 @@ void draw() {
   plane3++;
   plane4++;
 
-/*
+
   if(keyPressed) {
 
     if(key == CODED && keyCode == LEFT)
@@ -48,14 +48,14 @@ void draw() {
       location = location + 5;
       
     }
-    if(key == KeyEvent.VK_SPACE || (key == CODED && keyCode == UP))
+    if(key == CODED && keyCode == UP)
     {
       
       beamX[counter] = location+42;
       beamY[counter] = 330; 
       counter++;
     }
-  }*/
+  }
   
   image(cloud, 0, 0, 400, 400);
 
@@ -82,6 +82,8 @@ void draw() {
 
 }
 
+
+/*
 void keyPressed()
 {
   
@@ -112,7 +114,7 @@ void keyPressed()
 
 
 }
-
+*/
 
 
 
