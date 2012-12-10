@@ -1,7 +1,6 @@
 /* @pjs preload="http://coderiderz.com/SDKM95erz/Shooter/data/jetspre.png,
 http://coderiderz.com/SDKM95erz/Shooter/data/raptor.png,
 http://coderiderz.com/SDKM95erz/Shooter/data/warzone.jpg"; */
-/* @pjs globalKeyEvents="true"; */  
 PImage img;
 PImage cloud;
 PImage jet;
